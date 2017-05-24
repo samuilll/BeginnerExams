@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OldExam
 {
-    class Program
+    class LongestWord
     {
         static void Main(string[] args)
         {
