@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0CCA085C-8D1E-4F82-B28E-70A26DC6B139}</ProjectGuid>
+    <ProjectGuid>{F03AEE2D-46FC-4E99-BEF2-235E03A3B297}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>OldExam</RootNamespace>
-    <AssemblyName>OldExam</AssemblyName>
+    <RootNamespace>MinMethod02</RootNamespace>
+    <AssemblyName>MinMethod02</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LongestWord.cs" />
+    <Compile Include="MinMethod02.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
