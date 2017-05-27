@@ -23,6 +23,7 @@ namespace NthDigit04
             {
                  digit = Convert.ToInt32(number % 10);
                 number = number / 10;
+                
             }
             return digit;
         }
