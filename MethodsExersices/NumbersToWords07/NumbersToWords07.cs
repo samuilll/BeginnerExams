@@ -20,98 +20,38 @@ namespace NumbersToWords07
         }
         static void NumberToWord (int number)
         {
+            
+      
+            string[] hundrets = new string[] {"one-hundred","two-hundred","three-hundred","four-hundred","five-hundred"
+              ,"six-hundred","seven-hundred","eight-hundred","nine-hundred"};
+
+            string[] decimals = new string[] { "twenty", "thirty", "fourty", "fifty", "sixty", "seventy", "eighty", "ninety" };
+
+            string[] ones = new string[] { "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
+
+            string[] exepts=new string[] { "ten", "eleven", "twelve","thirteen", "fourteen", "fivteen", "sixteen",
+                "seventeen", "eighteen", "nineteen" };
+
             if (number < -999) Console.WriteLine("too small");
+
             else if (number > -100 && number < 100) ;
+
             else if (number > 999) Console.WriteLine("too large");
-            else if (number <= 999 && number > -999)
+
+            else if (number <= 999 && number >= -999)
             {
                 if (number < 0) { number = Math.Abs(number); Console.Write("minus "); }
-                switch (number / 100)
-                {
-                    case 1: Console.Write("one-hundred"); break;
-                    case 2: Console.Write("two-hundred"); break;
-                    case 3: Console.Write("three-hundred"); break;
-                    case 4: Console.Write("four-hundred"); break;
-                    case 5: Console.Write("five-hundred"); break;
-                    case 6: Console.Write("six-hundred"); break;
-                    case 7: Console.Write("seven-hundred"); break;
-                    case 8: Console.Write("eight-hundred"); break;
-                    case 9:
-                        Console.Write("nine-hundred"); break;
-                        defaut: break;
-                }
-                if (number % 100 == 0) Console.WriteLine();
-                if (number % 100 < 20)
-                {
-                    switch (number % 100)
-                    {
-                        case 1: Console.WriteLine(" and one"); break;
-                        case 2: Console.WriteLine(" and two"); break;
-                        case 3: Console.WriteLine(" and three"); break;
-                        case 4: Console.WriteLine(" and four"); break;
-                        case 5: Console.WriteLine(" and five"); break;
-                        case 6: Console.WriteLine(" and six"); break;
-                        case 7: Console.WriteLine(" and seven"); break;
-                        case 8: Console.WriteLine(" and eight"); break;
-                        case 9: Console.WriteLine(" and nine"); break;
-                        case 10:
-                            Console.WriteLine(" and ten"); break;
-                            defaut: break;
-                    }
-                    switch (number % 100)
-                    {
-                        case 11: Console.WriteLine(" and eleven"); break;
-                        case 12: Console.WriteLine(" and twleve"); break;
-                        case 13: Console.WriteLine(" and thirteen"); break;
-                        case 14: Console.WriteLine(" and fourteen"); break;
-                        case 15: Console.WriteLine(" and fifteen"); break;
-                        case 16: Console.WriteLine(" and sixteen"); break;
-                        case 17: Console.WriteLine(" and seventeen"); break;
-                        case 18: Console.WriteLine(" and eighteen"); break;
-                        case 19: Console.WriteLine(" and nineteen"); break;
-                            defaut: break;
-                    }
-                }
-                else
-                {
-                    switch (number % 100 / 10)
-                    {
-
-                        case 2: Console.Write(" and twenty"); break;
-                        case 3: Console.Write(" and thirtu"); break;
-                        case 4: Console.Write(" and fourty"); break;
-                        case 5: Console.Write(" and fifty"); break;
-                        case 6: Console.Write(" and sixty"); break;
-                        case 7: Console.Write(" and seventy"); break;
-                        case 8: Console.Write(" and eighty"); break;
-                        case 9:
-                            Console.Write(" and ninety"); break;
-                            defaut: break;
-                    }
-                    if (number % 10 == 0) Console.WriteLine();
+                var hundretss = number / 100;
+                var decimalss = number % 100 / 10;
+                var oness = number % 10;
+                if (number % 100 == 0) Console.WriteLine(hundrets[number/100-1]);
+                else if (number % 100 < 10) Console.WriteLine("{0} and {1}",hundrets[hundretss-1],ones[oness-1]);
+               else if (number % 100 >= 10 && number % 100 < 20) Console.WriteLine("{0} and {1}",hundrets[hundretss-1],exepts[oness]);
+                else if (number % 10 == 0) Console.WriteLine("{0} and {1}",hundrets[hundretss-1],decimals[decimalss-2]);
+                else Console.WriteLine("{0} and {1} {2}", hundrets[hundretss - 1], decimals[decimalss - 2],ones[oness-1]);
 
 
-                    if (number % 10 != 0)
-                    {
-
-                        switch (number % 10)
-                        {
-                            case 1: Console.WriteLine(" one"); break;
-                            case 2: Console.WriteLine(" two"); break;
-                            case 3: Console.WriteLine(" three"); break;
-                            case 4: Console.WriteLine(" four"); break;
-                            case 5: Console.WriteLine(" five"); break;
-                            case 6: Console.WriteLine(" six"); break;
-                            case 7: Console.WriteLine(" seven"); break;
-                            case 8: Console.WriteLine(" eight"); break;
-                            case 9: Console.WriteLine(" nine"); break;
-                        }
-                    }
-                }
             }
-          
-            
-
         }
     }
 }
