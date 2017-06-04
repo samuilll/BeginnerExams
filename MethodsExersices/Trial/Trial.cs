@@ -10,33 +10,75 @@ namespace StringEncryption08
     {
         static void Main(string[] args)
         {
-            string a = "adios";
-            string bu = "12";
-            a = a + bu;
-            Console.WriteLine(a);
-            //var code = int.Parse(Console.ReadLine());
-            //var lastdigit = code % 10;
-            //var firstdigit = 0;
-            //for (int i = 0; ; i++)
-            //{
-            //    firstdigit = code % 10;
-            //    if (code / 10 != 0) code = code / 10;
-            //    else break;
+            var number = int.Parse(Console.ReadLine());
 
-            //}
-            //Console.WriteLine(firstdigit);
-            //Console.WriteLine(lastdigit);
-            //Console.WriteLine(9/10);
-            //var letter = char.Parse(Console.ReadLine());
-            //var code = Convert.ToInt32(letter);
-            //Console.WriteLine(code);
-            //char f = Convert.ToChar(code);
-            //Console.WriteLine(f);
-            //var a = int.Parse(Console.ReadLine());
-            //var b = int.Parse(Console.ReadLine());
-            //string sum = Convert.ToString(a + b);
-            //sum = sum + 'a';
-            //Console.WriteLine(sum);
+            number = MakeTheNumberPositive(number);
+
+            var digitsCount = GetTheNumberOfDigits(number);
+
+            Console.WriteLine(digitsCount);
+
+            var oddSum = GetTheSumOfTheOddDigits(number);
+
+            var evenSum = GetTheSumOfTheEvenDigits(number);
+
+            Console.WriteLine(oddSum * evenSum);
+        }
+
+        private static  int GetTheSumOfTheOddDigits(int number)
+        {
+            var count = GetTheNumberOfDigits(number);
+            var oddSum = 0;
+            var currentDigit = 0;
+            for (int i = 0; i < count; i++)
+            {
+                currentDigit= number % 10;
+                number /= 10;
+                if (currentDigit%2!=0)
+                {
+                    oddSum += currentDigit;
+                }
+                          
+            }
+            return oddSum;
+        }
+
+        private static int GetTheSumOfTheEvenDigits(int number)
+        {
+            var count = GetTheNumberOfDigits(number);
+            var evenSum = 0;
+            var currentDigit = 0;
+            for (int i = 0; i < count; i++)
+            {
+                currentDigit = number % 10;
+                number /= 10;
+                if (currentDigit % 2 == 0)
+                {
+                    evenSum += currentDigit;
+                }
+
+            }
+            return evenSum;
+        }
+
+        private static int GetTheNumberOfDigits(int number)
+        {
+            var count = 0;
+            while (number != 0)
+            {
+                number /= 10;
+                count++;
+            }
+
+            return count;
+        }
+
+        private static int MakeTheNumberPositive(int number)
+        {
+           
+            number = Math.Abs(number);
+            
+            return number;
         }
     }
 }

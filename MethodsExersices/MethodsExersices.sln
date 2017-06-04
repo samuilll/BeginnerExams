@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notifications06", "Notifica
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumbersToWords07", "NumbersToWords07\NumbersToWords07.csproj", "{0CD7AFD6-E295-4315-87ED-35F886CF9E63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trial", "Trial\Trial.csproj", "{5EC5517B-F8B7-408B-A7E6-A1E284AD8194}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "debugExers1", "Trial\debugExers1.csproj", "{5EC5517B-F8B7-408B-A7E6-A1E284AD8194}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringEncryption08", "StringEncryption08\StringEncryption08.csproj", "{09DF89E5-8656-4D76-8395-AB024A2B0057}"
 EndProject
