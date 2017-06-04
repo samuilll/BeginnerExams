@@ -87,7 +87,7 @@ namespace Task18
             {
                 for (int j = 0; j < N; j++)
                 {
-                    if(array[i, j] == 0) array[i, j] = name[count];
+                    if(array[i, j] == '*') array[i, j] = name[count];
                 }
             }
         }
