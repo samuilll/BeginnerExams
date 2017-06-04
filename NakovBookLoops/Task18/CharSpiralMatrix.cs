@@ -11,31 +11,34 @@ namespace Task18
         static void Main(string[] args)
         {
             var N = int.Parse(Console.ReadLine());
-            int[,] array = new int[N, N];
+            char[,] array = new char[N, N];
+            string name = Console.ReadLine();
             int count = 1;
-            FullTheMatrixWithElement(array, 0);
+            FullTheMatrixWithElement(array, '*');
 
 
-            SpiraMatrix(array, N);
+            SpiraMatrix(array, N,name);
+            Console.WriteLine();
+            Console.WriteLine();
 
             
             ShowTheMatrix(array);
-            Console.WriteLine("Гуг");
+            
 
         }
-        static void ShowTheMatrix(int[,] matrix)
+        static void ShowTheMatrix(char[,] matrix)
         {
             for (int i = 0; i < matrix.GetLength(0); i++)
             {
                 for (int j = 0; j < matrix.GetLength(1); j++)
                 {
-                    Console.Write(matrix[i, j].ToString("D2")+" ");
+                    Console.Write(matrix[i, j]+" ");
                 }
                 Console.WriteLine();
             }
             Console.WriteLine();
         }
-        static void FullTheMatrixWithElement(int[,] matrix, int letter)
+        static void FullTheMatrixWithElement(char[,] matrix, char letter)
         {
             for (int i = 0; i < matrix.GetLength(0); i++)
             {
@@ -47,32 +50,36 @@ namespace Task18
 
             }
         }
-        static void SpiraMatrix(int[,] array,int N)
+        static void SpiraMatrix(char[,] array,int N, string name)
         {
-            var count = 1;
+            var count = 0;
            
             var turns = 0;
             while (turns < N / 2)
             {
                 for (int j = turns; j < N - turns; j++)
                 {
-                    array[0 + turns, j] = count;
+                    array[0 + turns, j] = name[count];
                     count++;
+                    if (count == name.Length) count = 0;
                 }
                 for (int i = 1 + turns; i < N - turns; i++)
                 {
-                    array[i, N - 1 - turns] = count;
+                    array[i, N - 1 - turns] = name[count];
                     count++;
+                    if (count == name.Length) count = 0;
                 }
                 for (int i = N - 2 - turns; i >= 0 + turns; i--)
                 {
-                    array[N - 1 - turns, i] = count;
+                    array[N - 1 - turns, i] = name[count];
                     count++;
+                    if (count == name.Length) count = 0;
                 }
                 for (int i = N - 2 - turns; i >= 1 + turns; i--)
                 {
-                    array[i, 0 + turns] = count;
+                    array[i, 0 + turns] = name[count];
                     count++;
+                    if (count == name.Length) count = 0;
                 }
                 turns++;
             }
@@ -80,7 +87,7 @@ namespace Task18
             {
                 for (int j = 0; j < N; j++)
                 {
-                    if(array[i, j] == 0) array[i, j] = count;
+                    if(array[i, j] == 0) array[i, j] = name[count];
                 }
             }
         }
