@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26430.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Last3ConsecEqual01", "Last3ConsecEqual01\Last3ConsecEqual01.csproj", "{B9EC4192-9213-419D-BAF0-CDEA2F2057A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EqualToTheirElements02", "EqualToTheirElements02\EqualToTheirElements02.csproj", "{AFCCD183-BCA4-4845-84D0-1E93BBDC3D91}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B9EC4192-9213-419D-BAF0-CDEA2F2057A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9EC4192-9213-419D-BAF0-CDEA2F2057A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9EC4192-9213-419D-BAF0-CDEA2F2057A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFCCD183-BCA4-4845-84D0-1E93BBDC3D91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFCCD183-BCA4-4845-84D0-1E93BBDC3D91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFCCD183-BCA4-4845-84D0-1E93BBDC3D91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFCCD183-BCA4-4845-84D0-1E93BBDC3D91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
