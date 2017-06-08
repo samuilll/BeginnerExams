@@ -1,0 +1,4 @@
+1.   string text = "     dfdsf    ";
+     Console.WriteLine(text.trim());
+	 // dfdsf   
+	 // реже всички спейсове отляво и отдясно

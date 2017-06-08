@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B0C19408-F1B1-4ED2-954F-2D74501ECC5F}</ProjectGuid>
+    <ProjectGuid>{CDCFFB7E-9444-4CD6-AEC8-9E64F553BBFC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Phonebook03</RootNamespace>
-    <AssemblyName>Phonebook03</AssemblyName>
+    <RootNamespace>Trial</RootNamespace>
+    <AssemblyName>Trial</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Phonebook03.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
