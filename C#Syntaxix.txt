@@ -1,4 +1,52 @@
-1.   string text = "     dfdsf    ";
+﻿1.   string text = "     dfdsf    ";
      Console.WriteLine(text.trim());
 	 // dfdsf   
 	 // реже всички спейсове отляво и отдясно
+
+
+2.      int value; 
+
+	value = 12345;
+	Console::WriteLine(value.ToString("D"));
+	// Displays 12345
+	Console::WriteLine(value.ToString("D8"));
+	// Displays 00012345
+
+
+3. 	int p = 123456767;
+
+	Console.WriteLine("{0:N0}",p)
+
+
+
+4. string digits = "124345";  / 
+	
+	int p = int.Parse(digits[2].ToString);
+
+	Console.WriteLine(p+1);  // 5
+
+
+5.while (true)
+            {
+                try
+                {
+                    var n = int.Parse(Console.ReadLine
+
+                    if (n % 2 == 0) break;
+                }
+                catch (Exception)
+                {
+
+                    Console.WriteLine("Invalid Number. Please try again");
+                }
+            }
+
+
+
+???   StringSplitOptions.RemoveEmptyEntries ???
+
+		string word = "hj1329"
+		if (char.IsDigit)
+
+
+Char Methods https://msdn.microsoft.com/en-us/library/system.char_methods(v=vs.110).aspx

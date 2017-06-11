@@ -10,19 +10,20 @@ namespace Phonebook03
     {
         static void Main(string[] args)
         {
-            string[] phoneNumbers = Console.ReadLine().Split(' ');
-            string[] names = Console.ReadLine().Split(' ');
-            string[] currentName = Console.ReadLine().Split(' ');
+            string[] phoneNumbers = Console.ReadLine().Split();
+            string[] names = Console.ReadLine().Split();
+            string[] currentName = Console.ReadLine().Split();
             while (currentName[0] != "done")
             {
 
                 for (int i = 0; i < names.Length; i++)
                 {
+
                     if (currentName[1] == names[i] && currentName[0] == "call")
                     {
                         var sum = GetTheSumOfTheDigits(phoneNumbers[i]);
 
-                        if (sum%2!=0)
+                        if (sum % 2 != 0)
                         {
                             Console.WriteLine($"calling {phoneNumbers[i]}...\nno answer");
                         }
@@ -30,17 +31,17 @@ namespace Phonebook03
                         {
                             string time = TakeTimeFormat(sum);
 
-                            Console.WriteLine($"calling {phoneNumbers[i]}...\ncall ended.duration: {time}");
+                            Console.WriteLine($"calling {phoneNumbers[i]}...\ncall ended. duration: {time}");
                         }
-                        
-                      
+
+
                     }
                     if (currentName[1] == names[i] && currentName[0] == "message")
 
                     {
                         var difference = GetTheDigitsDifference(phoneNumbers[i]);
 
-                        if (difference%2!=0)
+                        if (difference % 2 != 0)
                         {
                             Console.WriteLine($"sending sms to {phoneNumbers[i]}...\nbusy");
                         }
@@ -90,44 +91,45 @@ namespace Phonebook03
 
         private static int GetTheDigitsDifference(string number)
         {
-            var integer = Convert.ToInt64(number);
 
-            
+            int sum = 0;
 
-            Int64 difference = 0;
-
-            while (integer != 0)
+            for (int i = 0; i < number.Length; i++)
             {
-                difference = integer % 10 + difference;
-
-                integer /= 10;
+                if (number[i] >= 49 && number[i] <= 57)
+                {
+                    sum = sum - int.Parse(number[i].ToString());
+                }
             }
-            return Convert.ToInt32(difference);
+
+            return sum;
         }
 
-        private static string TakeTimeFormat( int sum)
+        private static string TakeTimeFormat(int sum)
         {
-            Convert.ToUInt64(sum);
+            
             var min = sum / 60;
             var sec = sum % 60;
             string time = $"{min:D2}:{sec:D2}";
             return time;
-            
+
         }
 
         private static int GetTheSumOfTheDigits(string number)
         {
-            var integer = Convert.ToInt64(number);
-           
-            Int64 sum = 0;
 
-            while(integer!=0)
+
+            int sum = 0;
+
+            for (int i = 0; i < number.Length; i++)
             {
-                sum = integer % 10 + sum;
-
-                integer /= 10;
+                if (number[i] >= 49 && number[i] <= 57)
+                {
+                    sum = sum + int.Parse(number[i].ToString());
+                }
             }
-            return Convert.ToInt32(sum);
+
+            return sum;
         }
     }
 }
