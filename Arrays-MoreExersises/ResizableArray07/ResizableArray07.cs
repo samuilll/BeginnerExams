@@ -11,7 +11,9 @@ namespace ResizableArray07
         static void Main(string[] args)
         {
             string origin = string.Empty;
+
             string[] input = string.Empty.Split();
+
             do
             {
                 input = Console.ReadLine().Split();
@@ -93,6 +95,7 @@ namespace ResizableArray07
 
             for (int i = origin.Length - 1; ; i--)   // Get the ' ' index to remove the last number 
             {
+
                 if (origin[i] == ' ' || (i == 0))
                 {
                     index = i;

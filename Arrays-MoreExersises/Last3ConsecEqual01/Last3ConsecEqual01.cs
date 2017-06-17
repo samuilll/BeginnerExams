@@ -11,6 +11,7 @@ namespace Last3ConsecEqual01
         static void Main(string[] args)
         {
             String[] words = Console.ReadLine().Split(' ');
+
             var index = -1;
 
             var count = 0;
