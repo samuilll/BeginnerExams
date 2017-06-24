@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task18NumberSpiral", "task1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharSpiral", "CharSpiral\CharSpiral.csproj", "{17F92E9F-B071-44A2-A0F5-39698223B25B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task07", "Task07\Task07.csproj", "{78BB8545-A717-4C3B-8756-FC0672EFC2C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{17F92E9F-B071-44A2-A0F5-39698223B25B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17F92E9F-B071-44A2-A0F5-39698223B25B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17F92E9F-B071-44A2-A0F5-39698223B25B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78BB8545-A717-4C3B-8756-FC0672EFC2C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78BB8545-A717-4C3B-8756-FC0672EFC2C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78BB8545-A717-4C3B-8756-FC0672EFC2C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78BB8545-A717-4C3B-8756-FC0672EFC2C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

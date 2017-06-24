@@ -24,27 +24,38 @@ namespace FiveSpecialLetters04
                         {
                             for (char letter5 = 'a'; letter5 < 'f'; letter5++)
                             {
+
                                 string text = FindTheRightLetters(letter1, letter2, letter3, letter4, letter5);
                                 int sum = FindTheSum(text);
+
                                 if (sum >= start && sum <= end)
+
                                 {
                                     Console.Write("{0}{1}{2}{3}{4} ", letter1, letter2, letter3, letter4, letter5);
+
                                         check = true;
                                 }
+
                             }
                         }
                     }
                 }
             }
+
             if (!check)
+
                 Console.Write("No");
+
             Console.WriteLine();
+
         }
 
         private static int FindTheSum(string text)
         {
             int[] numbers = new int[] { 5, -12, 47, 7, -32 };
+
             char[] letters = new char[] { 'a', 'b', 'c', 'd', 'e' };
+
             var sum = 0;
 
             for (int i = 0; i < text.Length; i++)
@@ -59,58 +70,77 @@ namespace FiveSpecialLetters04
 
                 }
             }
+
             return sum;
         }
 
         private static string FindTheRightLetters(char letter1, char letter2, char letter3, char letter4, char letter5)
         {
             string text = letter1.ToString() + letter2.ToString() + letter3.ToString() + letter4.ToString() + letter5.ToString();
+
             string newtext = "";
+
             var count = 0;
+
             var check = new bool[] { true, true, true, true, true };
 
             for (int i = 0; i < text.Length; i++)
             {
+
                 for (int j = 0; j < text.Length; j++)
+
                 {
                     if (text[i] == text[j])
+
                     {
                         count++;
                     }
+
                     if (count > 1)
 
                         check[j] = false;
 
                 }
+
                 for (int p = 0; p < check.Length; p++)
+
                 {
                     if (check[p] && CheckTheNewtext(newtext, text[p])) newtext += text[p];
                 }
 
                 count = 0;
+
                 CleanTheBoolArray(check);
+
             }
+
             return newtext;
         }
 
         private static void CleanTheBoolArray(bool[] check)
         {
             for (int i = 0; i < check.Length; i++)
+
             {
                 check[i] = true;
             }
+
         }
         private static bool CheckTheNewtext(string newtext, char letter)
         {
             var check = true;
+
             for (int i = 0; i < newtext.Length; i++)
             {
                 if (newtext[i] == letter)
+
                 {
                     check = false;
+
                     break;
                 }
             }
+
             return check;
         }
     }

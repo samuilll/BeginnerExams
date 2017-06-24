@@ -11,10 +11,13 @@ namespace StringEncryption08
         static void Main(string[] args)
         {
             var N = int.Parse(Console.ReadLine());
+
             string[] array = new string[N];
+
             for (int i = 0; i < N; i++)
             {
                 var letter = char.Parse(Console.ReadLine());
+
                 array[i] = (Encrypt(letter));
 
             }
