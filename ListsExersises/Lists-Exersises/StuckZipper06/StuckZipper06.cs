@@ -44,9 +44,6 @@ namespace StuckZipper06
 
             Console.WriteLine(string.Join(" ", outputLine));
 
-
-
-
         }
 
         private static void FullTheOutPutLine(List<int> firstLine, List<int> secondLine, List<int> outputLine)
@@ -99,7 +96,7 @@ namespace StuckZipper06
             for (int i = 0; i < integers.Count; i++)
             {
                 var countOfDigits = 0;
-
+                        
                 var number = integers[i];
 
                 while (number != 0)
