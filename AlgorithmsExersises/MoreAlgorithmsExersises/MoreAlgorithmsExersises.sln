@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitHole01", "RabbitHole01\RabbitHole01.csproj", "{AD20D7EB-DFDD-4EE6-9CA4-E27AB5C8A122}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JapanesseRoulette02", "JapanesseRoulette02\JapanesseRoulette02.csproj", "{AF64628B-487D-4DD5-8422-DE5DF28E7CB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trial", "Trial\Trial.csproj", "{2FCE01EA-02A8-420D-9A0F-FBD27C4E4201}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD20D7EB-DFDD-4EE6-9CA4-E27AB5C8A122}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD20D7EB-DFDD-4EE6-9CA4-E27AB5C8A122}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD20D7EB-DFDD-4EE6-9CA4-E27AB5C8A122}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD20D7EB-DFDD-4EE6-9CA4-E27AB5C8A122}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF64628B-487D-4DD5-8422-DE5DF28E7CB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF64628B-487D-4DD5-8422-DE5DF28E7CB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF64628B-487D-4DD5-8422-DE5DF28E7CB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF64628B-487D-4DD5-8422-DE5DF28E7CB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FCE01EA-02A8-420D-9A0F-FBD27C4E4201}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FCE01EA-02A8-420D-9A0F-FBD27C4E4201}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FCE01EA-02A8-420D-9A0F-FBD27C4E4201}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FCE01EA-02A8-420D-9A0F-FBD27C4E4201}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

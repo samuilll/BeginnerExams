@@ -26,6 +26,7 @@ namespace Winecraft06
             var i = 1;
 
             var check = true;
+
             while (check)
             {
 
@@ -40,31 +41,34 @@ namespace Winecraft06
 
                     TooWeaksBehaviour(grapes, N, separatedGrapes);
 
-
-
-
                     SeparateGrapes(grapes, N, separatedGrapes);
 
                     i++;
 
-                    Console.WriteLine(string.Join(" ", grapes));
+               //    Console.WriteLine(string.Join(" ", grapes));
                 }
-                Console.WriteLine();
-                Console.WriteLine();
+
+           //     Console.WriteLine();
+            //    Console.WriteLine();
+
                 i = 1;
+
               check =  CheckTheGrapesCount(grapes, N);
             }
 
+     //       Console.WriteLine();
+     //       Console.WriteLine();
 
+            for (int j = 0; j < grapes.Count; j++)
+            {
+                if (grapes[j] == 0)
+                {
+                    grapes.Remove(grapes[j]);
 
+                    j--;
+                }
+            }
 
-
-
-
-
-
-            Console.WriteLine();
-            Console.WriteLine();
             Console.WriteLine(string.Join(" ", grapes));
 
         }
@@ -75,13 +79,25 @@ namespace Winecraft06
             {
                 if (grapes[i]<=n)
                 {
-                    grapes.RemoveAt(i);
+                    grapes[i]=0;
 
-                    i--;
+                   
                 }
             }
 
-            var check = (grapes.Count >= n) == true;
+            var moreThanN = 0;
+
+            for (int i = 0; i < grapes.Count; i++)
+            {
+                if (grapes[i] > n)
+                {
+                    moreThanN += 1;
+
+                    
+                }
+            }
+
+            var check = (moreThanN >= n) == true;
 
             return check;
         }
@@ -91,13 +107,9 @@ namespace Winecraft06
             for (int i = 0; i < grapes.Count; i++)
             {
 
-
                 if (separatedGrapes[i] == "veryweak" && grapes[i] > 0)
 
-                    grapes[i] -= 3;
-
-
-
+                    grapes[i] -= 2;
             }
         }
 
@@ -106,13 +118,9 @@ namespace Winecraft06
             for (int i = 0; i < grapes.Count; i++)
             {
 
-
                 if (separatedGrapes[i] == "normal")
 
                     grapes[i] += 1;
-
-
-
             }
         }
 
@@ -126,8 +134,7 @@ namespace Winecraft06
 
                     grapes[i] -= 1;
 
-               
-
+             
             }
         }
 
@@ -135,57 +142,35 @@ namespace Winecraft06
         {
             for (int i = 1; i < grapes.Count-1; i++)
             {
-                var check = ((grapes[i - 1] > 0) && (grapes[i + 1] > 0)) == true;
+                var check1 = ((grapes[i - 1] > 0) && (grapes[i + 1] > 0)) == true;
 
-                if (separatedGrapes[i] == "powerful" && check)
+                var check2 = ((grapes[i - 1] == 0)) == true;
+
+                var check3 = (grapes[i + 1] == 0) == true;
+
+                var check4 = (check2 && !check3) || (check3 && !check2) == true;
+
+                var check5 = check2 && check3;
+
+
+
+                if (separatedGrapes[i] == "powerful" && check1)
+
+                    grapes[i] += 3;
+
+
+                else if (separatedGrapes[i] == "powerful" && check4)
 
                     grapes[i] += 2;
 
-                if (separatedGrapes[i] == "powerful" && !check)
+                else if (separatedGrapes[i] == "powerful" && check5)
 
                     grapes[i] += 1;
-
-                
-
             }
         }
 
-        //private static void IncreaseDiscreaseGrapes(List<int> grapes, int n, string[] separatedGrapes)
-        //{
-
-
-        //    for (int i = 1; i < grapes.Count-1; i++)
-        //    {
-               
-
-        //        var check2 = grapes[i] > 0;
-        //        if (i != 0 && i != grapes.Count - 1)
-        //        {
-
-
-        //            var check1 = ((grapes[i - 1] > 0) && ((grapes[i + 1]) > 0) && i != 0 && i != grapes.Count - 1) == true;
-
-        //            if (separatedGrapes[i] == "powerful" && check1)
-        //            {
-        //                grapes[i] += 2;
-        //            }
-        //            else
-        //            {
-        //                grapes[i] += 1;
-        //            }
-        //        }
-        //        if (separatedGrapes[i] == "weak" && check2)
-        //        {
-        //            grapes[i] -= 1;
-        //        }
-
-        //        if (separatedGrapes[i] == "normal" && check2)
-        //        {
-        //            grapes[i] += 1;
-        //        }
-
-        //    }
-        //}
+       
+      
 
         private static void SeparateGrapes(List<int> grapes, int N, string[] separateGrapes)
         {
@@ -201,13 +186,13 @@ namespace Winecraft06
                 //var check2 = (grapes[j + 1] < grapes[j]) == true;
 
                 var check1 = (grapes[j] > grapes[j - 1] && grapes[j] > grapes[j + 1]) == true;
-
-               
-
+            
                 if (check1)
                 {
                     separateGrapes[j] = "powerful";
+
                     separateGrapes[j - 1] = "weak";
+
                     separateGrapes[j + 1] = "weak";
                 }
             }
