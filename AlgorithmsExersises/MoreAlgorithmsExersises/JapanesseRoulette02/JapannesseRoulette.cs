@@ -68,20 +68,21 @@ namespace JapanesseRoulette02
 
             revolver[bulletIndex] = 0;
 
-            var newBulletIndex = bulletIndex - stregth;
-
-            if (newBulletIndex < 0 && Math.Abs(newBulletIndex)<revolver.Length)
+            while (stregth>0)
             {
-                newBulletIndex = revolver.Length - Math.Abs(newBulletIndex);
-            }
-            if (newBulletIndex < 0 && Math.Abs(newBulletIndex) >= revolver.Length)
-            {
-                newBulletIndex = Math.Abs(newBulletIndex) % revolver.Length;
+                bulletIndex--;
+
+                stregth--;
+
+                if (bulletIndex<0)
+                {
+                    bulletIndex = revolver.Length - 1;
+                }
             }
 
-            revolver[newBulletIndex] = 1;
+            revolver[bulletIndex] = 1;
 
-            var isAlive = PushTheTrigger(revolver, newBulletIndex);
+            var isAlive = PushTheTrigger(revolver, bulletIndex);
 
             return isAlive;
         }
@@ -92,20 +93,21 @@ namespace JapanesseRoulette02
 
             revolver[bulletIndex] = 0;
 
-            var newBulletIndex = bulletIndex + stregth;
-
-            if (newBulletIndex < revolver.Length)
+            while (stregth > 0)
             {
-                revolver[newBulletIndex] = 1;
-            }
-            else
-            {
-                newBulletIndex = newBulletIndex % revolver.Length;
+                bulletIndex++;
 
-                revolver[newBulletIndex] = 1;
+                stregth--;
+
+                if (bulletIndex >revolver.Length-1)
+                {
+                    bulletIndex = 0;
+                }
             }
 
-            var isAlive = PushTheTrigger(revolver,newBulletIndex);
+            revolver[bulletIndex] = 1;
+
+            var isAlive = PushTheTrigger(revolver,bulletIndex);
 
             return isAlive;
         }

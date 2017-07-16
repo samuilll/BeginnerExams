@@ -110,14 +110,21 @@ namespace RabbitHole01
         {
             var moveNumber = int.Parse(currentCommand[1]);
 
-            currentIndex = currentIndex += moveNumber;
+            energy -= moveNumber;
 
-            if (currentIndex>=commands.Count)
+            while (moveNumber>0)
             {
-                currentIndex = currentIndex % commands.Count;
+                currentIndex++;
+
+                moveNumber--;
+
+                if (currentIndex>commands.Count-1)
+                {
+                    currentIndex = 0;
+                }
             }
 
-            energy -=moveNumber;
+           
 
             return energy;
 
@@ -127,14 +134,20 @@ namespace RabbitHole01
         {
             var moveNumber = int.Parse(currentCommand[1]);
 
-            currentIndex = currentIndex -= moveNumber;
+            energy -= moveNumber;
 
-            if (currentIndex<0)
+            while (moveNumber > 0)
             {
-                currentIndex = Math.Abs(currentIndex)%commands.Count-1;
+                currentIndex--;
+
+                moveNumber--;
+
+                if (currentIndex < 0)
+                {
+                    currentIndex = commands.Count-1;
+                }
             }
 
-            energy -= moveNumber;
 
             return energy;
 

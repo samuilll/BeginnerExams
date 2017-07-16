@@ -104,6 +104,12 @@ Bool p = double.TryParse("21sad34",out int number);  // return false
 72.46 101.100 114.105 101.107 39.32 115.44 32.117 108.111 111.121 111.32 107.116 105.97 110.32 103
 
 Right|100 Left|10 Bomb|11 RabbitHole Bomb|10 Left|2
+
+0 0 0 0 1 0
+
+10,Right 11,Left 140,Right 1,Left 30,Right
+
+11,Left 140,Right 1,Left 30,Right 1,Right 2,Left 5,Left
 	
 	
 	
