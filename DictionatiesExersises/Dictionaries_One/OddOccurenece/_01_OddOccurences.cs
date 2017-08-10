@@ -16,6 +16,8 @@ class _01_OddOccurences
 
         var oddNumbers = new Dictionary<string, int>();
 
+        var outputList = new List<string>();
+
         for (int i = 0; i < words.Count; i++)
         {
             if (!oddNumbers.ContainsKey(words[i]))
@@ -30,24 +32,24 @@ class _01_OddOccurences
 
         }
 
-        foreach (var kvp in oddNumbers)
-        {
-            var key = kvp.Key;
+        //foreach (var kvp in oddNumbers)
+        //{
+        //    var key = kvp.Key;
 
-            var number = kvp.Value;
+        //    var number = kvp.Value;
 
-            Console.WriteLine($"{key} -> {number}");
-        }
+        //    Console.WriteLine($"{key} -> {number}");
+        //}
 
         foreach (var kvp in oddNumbers)
         {
             if (kvp.Value % 2 != 0)
             {
-                Console.WriteLine(kvp.Key);
+                outputList.Add(kvp.Key);
             }
         }
 
-       
+        Console.WriteLine(string.Join(", ",outputList));
     }
 }
 

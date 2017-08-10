@@ -109,13 +109,16 @@ Right|100 Left|10 Bomb|11 RabbitHole Bomb|10 Left|2
 
 10,Right 11,Left 140,Right 1,Left 30,Right
 
-11,Left 140,Right 1,Left 30,Right 1,Right 2,Left 5,Left
-	
-	
-	
-	
-	
-	
+11,Left 140,Right 1,Left 30,Right 1,Right 2,Left 5,Le
+
+7
+Ivancho 5,20
+Mariika 5,50
+Ivancho 3,20
+Mariika 2,50
+Stamat 2,00
+Mariika 3,46
+Stamat 3,00
 	
 	
 	

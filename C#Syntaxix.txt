@@ -57,3 +57,5 @@ Char Methods https://msdn.microsoft.com/en-us/library/system.char_methods(v=vs.1
 https://www.dotnetperls.com/string-join
 
 https://msdn.microsoft.com/en-us/library/system.string.join(v=vs.110).aspx
+
+In SoftUni you can study Java, C#, PHP and JavaScript. JAVA and c# developers graduate in 2-3 years. Go in!
