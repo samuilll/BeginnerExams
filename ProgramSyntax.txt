@@ -123,7 +123,11 @@ Stamat 3,00
 	
 	
 	
-	
+DSK | Ivan | 504,403
+DSK | Pesho | 2000,4031
+DSK | Aleksander | 20000,0001
+Piraeus | Ivan | 504,403
+Piraeus | Aleksander | 20000,0001	
 	
 	
 	

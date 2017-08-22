@@ -59,3 +59,54 @@ https://www.dotnetperls.com/string-join
 https://msdn.microsoft.com/en-us/library/system.string.join(v=vs.110).aspx
 
 In SoftUni you can study Java, C#, PHP and JavaScript. JAVA and c# developers graduate in 2-3 years. Go in!
+
+
+
+20,50
+Bread 2,41
+Butter 3,12
+Cheese 4,20
+Bread 2,12
+Milk 4,20
+end
+
+Bread 1,20
+Butter 3,60
+Milk 4
+Beer 1,40
+Sweets 4,20
+Shop is open
+Gosho: Bread, Beer, Bread
+Pesho: Sweets, Butter
+Print
+
+
+Bread 1,20
+Butter 3,60
+Beer 1,40
+Sweets 4,20
+Shop is open
+Gosho: Bread, Beer, Bread
+Discount
+Discount
+Discount
+Discount
+Discount
+Discount
+Discount
+Discount
+Discount
+Discount
+Discount
+Discount
+Discount
+Discount
+Discount
+Pesho: Sweets, Butter
+Print
+
+
+
+
+
+
