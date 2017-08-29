@@ -8,27 +8,29 @@ using System.IO;
 
     class Trial
     {
-        static void Main(string[] args)
-        {
+    static void Main(string[] args)
+    {
 
-        var title = string.Empty;
+    //var title = string.Empty;
 
-        var word = Console.ReadLine();
+    //var word = Console.ReadLine();
 
-        title = word;
+    //title = word;
 
-        Console.WriteLine(title);
+    //Console.WriteLine(title);
 
-        title = "heimuginot";
+    //title = "heimuginot";
 
-        Console.WriteLine(title);
+    //Console.WriteLine(title);
 
-        File.Create("fff.txt");
+    //File.Create("fff.txt");
 
-        File.AppendAllText("fff.txt", "safdsf");
+    //File.AppendAllText("fff.txt", "safdsf");
+
+    Console.WriteLine("abv" + 5 + "edf");
         }
-    
-   
     }
+   
+    
 
 
