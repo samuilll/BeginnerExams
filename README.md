@@ -1,2 +1,0 @@
-# BeginnerExams
-Simple Exams
