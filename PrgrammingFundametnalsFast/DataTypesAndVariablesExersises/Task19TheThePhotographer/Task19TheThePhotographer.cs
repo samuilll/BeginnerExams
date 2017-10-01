@@ -11,30 +11,32 @@ namespace Task19TheThePhotographer
         static void Main(string[] args)
         {
 
-            int numberOfPictures = int.Parse(Console.ReadLine());
+            long numberOfPictures = long.Parse(Console.ReadLine());
 
-            int filterTime = int.Parse(Console.ReadLine());
+            long filterTime = long.Parse(Console.ReadLine());
 
-            int filterFactor = int.Parse(Console.ReadLine());
+            long filterFactor = long.Parse(Console.ReadLine());
 
-            int uploadTimeForPicture = int.Parse(Console.ReadLine());
+            long uploadTimeForPicture = long.Parse(Console.ReadLine());
 
-            int usefulPictures = (int)Math.Ceiling((double)filterFactor / 100 * numberOfPictures);
+            long usefulPictures = (long)Math.Ceiling((double)filterFactor / 100 * numberOfPictures);
 
-            int allUploadTime = uploadTimeForPicture * usefulPictures;
+            long allUploadTime = uploadTimeForPicture * usefulPictures;
 
-            int allTime = allUploadTime + filterTime * numberOfPictures;
+            long allTime = allUploadTime + filterTime * numberOfPictures;
 
-            Console.WriteLine(usefulPictures);
-            Console.WriteLine(allUploadTime);
+           //Console.WriteLine(usefulPictures);
+           // Console.WriteLine(allUploadTime);
+           // Console.WriteLine(allTime);
 
-            var days = allTime / 60/60/24;
 
-            var hours = allTime/60/60;
+            long days = allTime / 60 / 60 / 24;
 
-            var minutes = allTime/60;
+            long hours = (allTime / 60 / 60) % 24;
 
-            var seconds = ((allTime % 86400) % 60) % 60;
+            long minutes = (allTime / 60) % 60;
+
+            long seconds = allTime % 60;
 
             Console.WriteLine($"{days}:{hours:D2}:{minutes:d2}:{seconds:d2}");
 
