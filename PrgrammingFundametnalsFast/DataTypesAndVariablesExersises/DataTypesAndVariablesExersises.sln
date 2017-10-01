@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task06StringsAndObjects", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task07ExchangeVariableValues", "Task07ExchangeVariableValues\Task07ExchangeVariableValues.csproj", "{5273814E-5406-4C91-891D-AE3D9C6BEED8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task08EmployeeData", "Task08EmployeeData\Task08EmployeeData.csproj", "{EC5F3A57-B98D-4ECD-801D-CBD1DBF10C73}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{5273814E-5406-4C91-891D-AE3D9C6BEED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5273814E-5406-4C91-891D-AE3D9C6BEED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5273814E-5406-4C91-891D-AE3D9C6BEED8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC5F3A57-B98D-4ECD-801D-CBD1DBF10C73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC5F3A57-B98D-4ECD-801D-CBD1DBF10C73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC5F3A57-B98D-4ECD-801D-CBD1DBF10C73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC5F3A57-B98D-4ECD-801D-CBD1DBF10C73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
