@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task03PractiseCharsAndStrin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task04VariableInHexFormat", "Task04VariableInHexFormat\Task04VariableInHexFormat.csproj", "{94A792D8-B204-4291-AC8C-6968E8015E7E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task05BooleanVariable", "Task05BooleanVariable\Task05BooleanVariable.csproj", "{3352481C-9D53-439F-AF38-DE83E24C24B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{94A792D8-B204-4291-AC8C-6968E8015E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94A792D8-B204-4291-AC8C-6968E8015E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94A792D8-B204-4291-AC8C-6968E8015E7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3352481C-9D53-439F-AF38-DE83E24C24B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3352481C-9D53-439F-AF38-DE83E24C24B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3352481C-9D53-439F-AF38-DE83E24C24B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3352481C-9D53-439F-AF38-DE83E24C24B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

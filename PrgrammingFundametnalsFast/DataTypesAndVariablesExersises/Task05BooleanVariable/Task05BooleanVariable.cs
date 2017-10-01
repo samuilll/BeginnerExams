@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task05BooleanVariable
+namespace Task05BooleanVariable//xzczxczxc
 {
-    class Program
+    class Task05BooleanVariable
     {
         static void Main(string[] args)
         {
