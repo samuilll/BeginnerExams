@@ -4,17 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-    class Task04VariableInHexFormat
+namespace Task05BooleanVariable
+{
+    class Program
     {
         static void Main(string[] args)
         {
-
-        string input = Console.ReadLine();
-
-        int number = Convert.ToInt32(input, 2);
-
-        Console.WriteLine(number);
         }
     }
-
+}
