@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task04VariableInHexFormat",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task05BooleanVariable", "Task05BooleanVariable\Task05BooleanVariable.csproj", "{3352481C-9D53-439F-AF38-DE83E24C24B7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task06StringsAndObjects", "Task06StringsAndObjects\Task06StringsAndObjects.csproj", "{F10A4B5C-E1F9-4CF8-815E-7B95B5327ABF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task07ExchangeVariableValues", "Task07ExchangeVariableValues\Task07ExchangeVariableValues.csproj", "{5273814E-5406-4C91-891D-AE3D9C6BEED8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{3352481C-9D53-439F-AF38-DE83E24C24B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3352481C-9D53-439F-AF38-DE83E24C24B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3352481C-9D53-439F-AF38-DE83E24C24B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F10A4B5C-E1F9-4CF8-815E-7B95B5327ABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F10A4B5C-E1F9-4CF8-815E-7B95B5327ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F10A4B5C-E1F9-4CF8-815E-7B95B5327ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F10A4B5C-E1F9-4CF8-815E-7B95B5327ABF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5273814E-5406-4C91-891D-AE3D9C6BEED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5273814E-5406-4C91-891D-AE3D9C6BEED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5273814E-5406-4C91-891D-AE3D9C6BEED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5273814E-5406-4C91-891D-AE3D9C6BEED8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
