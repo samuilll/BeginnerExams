@@ -4,12 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task09IndexOfLetters
-{
+
     class Task09IndexOfLetters
     {
         static void Main(string[] args)
         {
+
+        string alphabet = "abcdefghihklmnopqrstuvwxyz";
+
+        string word = Console.ReadLine();
+
+        foreach (var letter in word)
+        {
+            Console.WriteLine($"{letter} -> {alphabet.IndexOf(letter)}");
+        }
         }
     }
-}
+
