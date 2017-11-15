@@ -12,7 +12,7 @@ class _2_MatchPhoneNumber
 
         var text = Console.ReadLine();
 
-        var pattern = @"\+359([ -])2\1\d{3}\1\d{4}\b";
+        var pattern = @"(?<=\s|)\+359([ -])2\1\d{3}\1\d{4}\b";
 
         var regex = new Regex(pattern);
 
